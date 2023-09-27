@@ -1,0 +1,131 @@
+﻿/* styles.css */
+
+Global Styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palatino Linotype',"sans-serif";
+}
+
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav, nav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px
+}
+
+ul, .logo, .btn {
+    color: #008B8B;
+}
+
+nav ul li a {
+    color: #008B8B;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+a:hover {
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 900;
+    color: #008B8B;
+}
+
+.btn {
+    padding: 6px 24px;
+    border: 3px solid #033E3E;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+    .btn:active {
+        transform: scale(0.9)
+    }
+    
+#home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("space4.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    width: 450px;
+   
+    padding: 10px;
+    background:transparent;
+    box-shadow: -3px -3px 7px rgba(94,104,121,0.377), -3px -3px 7px rgba(94,104,121,0.377);
+    border-radius:7px ;
+   display:none;
+    
+}
+.showform{
+    display:block
+    !important;
+}
+.form-input img{
+    width:100%;
+    margin-bottom:30px;
+    max-width:500px;
+
+}
+.form-input label {
+    display: block;
+    width: 45%;
+    height: 45px;
+    margin-left: 25%;
+    text-align: center;
+    background: #008B8b;
+    line-height: 45px;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    justify-content: end;
+    align-items: end;
+}
+.form-input input{
+    display:none;
+}
